@@ -50,6 +50,7 @@ Explore the components of the Kinnector ecosystem:
 *   **[kinnector-docker](https://github.com/kinnector/kinnector-docker)**: Docker Compose files and containerization scripts to deploy the Kinnector stack locally with one command.
 *   **[kinnector-installer](https://github.com/kinnector/kinnector-installer)**: Bootstrapping scripts and installer packages for quick deployment across Linux environments.
 *   **[kinnector-docs](https://github.com/kinnector/kinnector-docs)**: Central developer and user documentation website.
+*   **[kinnector-design](https://github.com/kinnector/kinnector-design)**: Visual designs, system architecture blueprints, brand assets, and UI design assets.
 
 ---
 

@@ -14,9 +14,9 @@ Kinnector decouples low-level telemetry gathering from active policy enforcement
 
 ### Backend & Servers
 *   **[kinnector-warden](https://github.com/kinnector/kinnector-warden)** – Active runtime protector that blocks malicious activities and enforces security rules.
-*   **[kinnector-protect](https://github.com/kinnector/kinnector-protect)** – Security rules and policies used by the warden.
+*   **[kinnector-protect-community](https://github.com/kinnector/kinnector-protect-community)** – Core threat signatures, configurations, and security policies.
 *   **[kinnector-wordpress](https://github.com/kinnector/kinnector-wordpress)** – Integration plugin for protecting WordPress environments.
-*   **[kinnector-docker](https://github.com/kinnector/kinnector-docker)** – Compose configuration for running the stack locally.
+*   **[kinnector-docker](https://github.com/kinnector/kinnector-docker)** – Docker integrations to run Warden inside base images or as a sidecar proxy.
 *   **[kinnector-installer](https://github.com/kinnector/kinnector-installer)** – Setup scripts and packages for Linux deployments.
 
 ### General & Shared

@@ -4,7 +4,7 @@
 
 # **kinnector**: Advanced Protection, Redefined
 
-# 🛡️ We aren't building another antivirus, or another EDR.
+## We aren't building another antivirus, or another EDR.
 ## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
 
 ---

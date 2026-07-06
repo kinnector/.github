@@ -10,7 +10,7 @@
 
 <p><font size="4"><strong>Our products are built to prevent this worldwide disaster. We build our software completely free and open-source so anyone can install it and be safe.</strong></font></p>
 
---
+---
 
 ## Our Projects
 
@@ -32,7 +32,7 @@
 *   **Stability**: Near-zero false-positive rate.
 *   **Proof**: All test suites and setups can be found in our [CVE Test Suite repository](https://github.com/kinnector/kinnector-warden-cve-tests).
 
---
+---
 
 ## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
 

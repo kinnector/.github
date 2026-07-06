@@ -15,7 +15,7 @@
 ## Our Projects
 
 ### 💻 [**kinnector** Desktop](https://github.com/kinnector/kinnector-desktop) (stealer & supply chain protection)
-*The most powerful desktop protection against modern client-side threat vectors.*
+*The most powerful cross-platform desktop protection against modern client-side threat vectors. Supports macOS, Linux, and Windows.*
 *   **Target Vectors**: Info stealers, data exfiltration, wallet stealers, wallet hijackers, supply chain attacks, and OSS poisoning. Keeps your credentials and money safe.
 *   **Efficacy**: Tested every month against fresh malware samples:
     *   **June**: **100% detection rate**
@@ -23,7 +23,7 @@
 *   **Stability**: Near-zero false-positive rate.
 
 ### 🛡️ [**kinnector** Warden](https://github.com/kinnector/kinnector-warden) (0-day rce protection)
-*No more RCE vulnerabilities. Protect your servers and sites from future vulnerabilities de facto.*
+*No more RCE vulnerabilities. Protect your servers, sites, and applications from future vulnerabilities de facto. Language and technology agnostic. Supports smart detection, Docker and Kubernetes containers.*
 *   **Target Vectors**: Remote Code Execution (RCE) and system-level compromises.
 *   **Efficacy**: Tested on all RCE vulnerabilities from the last two decades with a **100% defensive rate**.
 *   **Stability**: Near-zero false-positive rate.

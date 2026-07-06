@@ -4,9 +4,6 @@
 
 # **kinnector**: Advanced Protection, Redefined
 
-## We aren't building another antivirus, or another EDR.
-## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
-
 ---
 
 <p><font size="4">Since 2016 to 2026—in more than a decade—information/wallet stealers and data exfiltrators have directly stolen about <strong>$3 Billion</strong> (verified) and <strong>$20–$80 Billion</strong> (approximate) from users like you and us. The overall economic damage has exceeded <strong>$1 Trillion</strong> due to lateral movement and chained attacks.</font></p>
@@ -33,6 +30,8 @@
 *   **Proof**: All test suites and setups can be found in our [CVE Test Suite repository](https://github.com/kinnector/kinnector-warden-cve-tests).
 
 ---
+
+## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
 
 ## Codebase Repositories
 

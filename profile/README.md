@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="profile/images/kinnector_banner.jpg" alt="kinnector Advanced Cyber Security Banner" width="100%">
+  <img src="profile/images/kinnector_banner.jpg" alt="**kinnector** Advanced Cyber Security Banner" width="100%">
 </p>
 
 # **kinnector**: Advanced Protection, Redefined

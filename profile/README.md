@@ -10,12 +10,13 @@
 
 <p><font size="4"><strong>Our products are built to prevent this worldwide disaster. We build our software completely free and open-source so anyone can install it and be safe.</strong></font></p>
 
----
+--
 
 ## Our Projects
 
 ### 💻 [**kinnector** Desktop](https://github.com/kinnector/kinnector-desktop) (stealer & supply chain protection)
 *The most powerful cross-platform desktop protection against modern client-side threat vectors. Supports macOS, Linux, and Windows.*
+*   **OS**: Mac\Linux\Windows
 *   **Target Vectors**: Info stealers, data exfiltration, wallet stealers, wallet hijackers, supply chain attacks, and OSS poisoning. Keeps your credentials and money safe.
 *   **Efficacy**: Tested every month against fresh malware samples:
     *   **June**: **100% detection rate**
@@ -24,12 +25,14 @@
 
 ### 🛡️ [**kinnector** Warden](https://github.com/kinnector/kinnector-warden) (0-day rce protection)
 *No more RCE vulnerabilities. Protect your servers, sites, and applications from future vulnerabilities de facto. Language and technology agnostic. Supports smart detection, Docker and Kubernetes containers.*
+*   **Support**: All Linux distros, Docker & Kubernetes, Smart-auto proxy/app/server/site detection.
+*   **Plug-N-Play**: Yes. Hassle-free setup.
 *   **Target Vectors**: Remote Code Execution (RCE) and system-level compromises.
 *   **Efficacy**: Tested on all RCE vulnerabilities from the last two decades with a **100% defensive rate**.
 *   **Stability**: Near-zero false-positive rate.
 *   **Proof**: All test suites and setups can be found in our [CVE Test Suite repository](https://github.com/kinnector/kinnector-warden-cve-tests).
 
----
+--
 
 ## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
 

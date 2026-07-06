@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="profile/images/kinnector_banner.jpg" alt="Kinnector Advanced Cyber Security Banner" width="100%">
+  <img src="profile/images/kinnector_banner.jpg" alt="kinnector Advanced Cyber Security Banner" width="100%">
 </p>
 
-# Kinnector: Advanced Protection, Redefined
+# **kinnector**: Advanced Protection, Redefined
 
 # 🛡️ We aren't building another antivirus, or another EDR.
 ## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
@@ -17,7 +17,7 @@
 
 ## Our Products
 
-### 💻 Kinnector Desktop
+### 💻 **kinnector** Desktop
 *The most powerful desktop protection against modern client-side threat vectors.*
 *   **Target Vectors**: Info stealers, data exfiltration, wallet stealers, wallet hijackers, supply chain attacks, and OSS poisoning. Keeps your credentials and money safe.
 *   **Efficacy**: Tested every month against fresh malware samples:
@@ -25,7 +25,7 @@
     *   **July**: *Data processing...*
 *   **Stability**: Near-zero false-positive rate.
 
-### 🛡️ Kinnector Warden
+### 🛡️ **kinnector** Warden
 *No more RCE vulnerabilities. Protect your servers and sites from future vulnerabilities de facto.*
 *   **Target Vectors**: Remote Code Execution (RCE) and system-level compromises.
 *   **Efficacy**: Tested on all RCE vulnerabilities from the last two decades with a **100% defensive rate**.

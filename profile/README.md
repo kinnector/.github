@@ -4,14 +4,20 @@
 
 # Kinnector: Advanced Protection, Redefined
 
-## 🛡️ We aren't building another antivirus, or another EDR.
-### We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
+# 🛡️ We aren't building another antivirus, or another EDR.
+## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
 
 ---
 
-Since 2016 to 2026—in more than a decade—information/wallet stealers and data exfiltrators have directly stolen about **$3 Billion** (verified) and **$20–$80 Billion** (approximate) from users like you and us. The overall economic damage has exceeded **$1 Trillion** due to lateral movement and chained attacks.
+<font size="4">
+Since 2016 to 2026—in more than a decade—information/wallet stealers and data exfiltrators have directly stolen about <strong>$3 Billion</strong> (verified) and <strong>$20–$80 Billion</strong> (approximate) from users like you and us. The overall economic damage has exceeded <strong>$1 Trillion</strong> due to lateral movement and chained attacks.
+</font>
 
-**Our products are built to prevent this worldwide disaster. We build our software completely free and open-source so anyone can install it and be safe.**
+<br><br>
+
+<font size="4">
+<strong>Our products are built to prevent this worldwide disaster. We build our software completely free and open-source so anyone can install it and be safe.</strong>
+</font>
 
 ---
 

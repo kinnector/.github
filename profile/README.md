@@ -15,7 +15,7 @@
 
 ---
 
-## Our Products
+## Our Projects
 
 ### 💻 [**kinnector** Desktop](https://github.com/kinnector/kinnector-desktop) (stealer & supply chain protection)
 *The most powerful desktop protection against modern client-side threat vectors.*

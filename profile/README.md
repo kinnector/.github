@@ -2,61 +2,62 @@
   <img src="profile/images/kinnector_banner.jpg" alt="**kinnector** Advanced Cyber Security Banner" width="100%">
 </p>
 
-# **kinnector**: Advanced Protection, Redefined
+# **kinnector**: Open-Source Runtime Security & Telemetry
 
 ---
 
-<p><font size="6">Since 2016 to 2026—in more than a decade—information/wallet stealers and data exfiltrators have directly stolen about <strong>$3 Billion</strong> (verified) and <strong>$20–$80 Billion</strong> (approximate) from users like you and us. The overall economic damage has exceeded <strong>$1 Trillion</strong> due to lateral movement and chained attacks.</font></p>
+## Why Kinnector exists
 
-<p><font size="6"><strong>Our products are built to prevent this worldwide disaster. We build our software completely free and open-source so anyone can install it and be safe.</strong></font></p>
+The security landscape is changing. Actors target software supply chains (npm, PyPI), exposed web application entrypoints, and developer environments. Attacks are no longer limited to compiled binaries on disk—adversaries execute fileless payloads, abuse container permissions, and hijack browser sessions to harvest credentials.
 
----
+Traditional antivirus relies on static signatures, failing to stop zero-day exploits or memory-only payloads. Enterprise EDR platforms are closed-source, heavy, and depend on reactive cloud detection that allows payloads to run before containment begins.
 
-## Our Projects
-
-### 💻 [**kinnector** Desktop](https://github.com/kinnector/kinnector-desktop) (stealer & supply chain protection)
-*The most powerful cross-platform desktop protection against modern client-side threat vectors. Supports macOS, Linux, and Windows.*
-*   **OS**: Mac\Linux\Windows
-*   **Target Vectors**: Info stealers, data exfiltration, wallet stealers, wallet hijackers, supply chain attacks, and OSS poisoning. Keeps your credentials and money safe.
-*   **Efficacy**: Tested every month against fresh malware samples:
-    *   **June**: **100% detection rate**
-    *   **July**: *Data processing...*
-*   **Stability**: Near-zero false-positive rate.
-
-### 🛡️ [**kinnector** Warden](https://github.com/kinnector/kinnector-warden) (0-day rce protection)
-*No more RCE vulnerabilities. Protect your servers, sites, and applications from future vulnerabilities de facto. Language and technology agnostic. Supports smart detection, Docker and Kubernetes containers.*
-*   **Support**: All Linux distros, Docker & Kubernetes, Smart-auto proxy/app/server/site detection.
-*   **Plug-N-Play**: Yes. Hassle-free setup.
-*   **Target Vectors**: Remote Code Execution (RCE) and system-level compromises.
-*   **Efficacy**: Tested on all RCE vulnerabilities from the last two decades with a **100% defensive rate**.
-*   **Stability**: Near-zero false-positive rate.
-*   **Proof**: All test suites and setups can be found in our [CVE Test Suite repository](https://github.com/kinnector/kinnector-warden-cve-tests).
+Kinnector solves this by providing modular, low-overhead runtime protection. By capturing OS-level events directly via native kernel telemetry (BPF LSM, ETW, EndpointSecurity), Kinnector evaluates behavioral rules in real-time, executing containment actions before a compromise propagates.
 
 ---
 
-## We are bringing advanced protection and securing systems from the vectors that hurt you and us the most.
+## The Kinnector Platform
+
+The ecosystem is split into three target environments:
+
+### 💻 Endpoint EDR (Kinnector Desktop)
+Protects client workstations and developer environments from client-side threats like browser credential theft, wallet hijackers, and malicious dependencies.
+* **Target Subsystems**: [kinnector-core](https://github.com/kinnector/kinnector-core) (telemetry engine) and [kinnector-agent](https://github.com/kinnector/kinnector-agent) (rules engine).
+* **Interface**: [kinnector-desktop](https://github.com/kinnector/kinnector-desktop) (Tauri/Svelte dashboard) and [kinnector-cli](https://github.com/kinnector/kinnector-cli) (terminal administration).
+
+### 🛡️ Server EDR (Kinnector Warden)
+Protects exposed server workloads, database interfaces, and container fleets from remote code execution (RCE) and container escapes.
+* **Target Subsystems**: [kinnector-warden](https://github.com/kinnector/kinnector-warden) (coordinator daemon) and [kinnector-docker](https://github.com/kinnector/kinnector-docker) (instrumented containers and sidecars).
+
+### 🌐 Web Application Shielding (wpwarden)
+Protects WordPress environments from SQL injection and parameter exploitation.
+* **Target Subsystem**: [kinnector-wordpress](https://github.com/kinnector/kinnector-wordpress) (PHP helper plugin).
+
+---
 
 ## Codebase Repositories
 
-### Desktop Security & Telemetry
-*   **[kinnector-core](https://github.com/kinnector/kinnector-core)** – Low-level telemetry engine that captures system events.
-*   **[kinnector-agent](https://github.com/kinnector/kinnector-agent)** – Local daemon that receives telemetry from the core and forwards it to wardens or backends.
-*   **[kinnector-desktop](https://github.com/kinnector/kinnector-desktop)** – Cross-platform desktop dashboard for visual administration.
-*   **[kinnector-cli](https://github.com/kinnector/kinnector-cli)** – Terminal-based dashboard for checking logs and configuration.
+### Host Security & Telemetry
+* **[kinnector-core](https://github.com/kinnector/kinnector-core)**: Low-level C++ telemetry collector (ETW, eBPF, ESF).
+* **[kinnector-agent](https://github.com/kinnector/kinnector-agent)**: Rust EDR daemon for local behavior monitoring and containment.
+* **[kinnector-desktop](https://github.com/kinnector/kinnector-desktop)**: Visual Tauri/SvelteKit client dashboard.
+* **[kinnector-cli](https://github.com/kinnector/kinnector-cli)**: Command-line utility for local EDR administration.
+* **[kinnector-installer](https://github.com/kinnector/kinnector-installer)**: Setup scripts and packages for Linux deployments.
+* **[kinnector-jvmti](https://github.com/kinnector/kinnector-jvmti)**: Dynamic JVM class inspection agent.
 
-### Server Protection & Integrations
-*   **[kinnector-warden](https://github.com/kinnector/kinnector-warden)** – Active runtime protector that blocks malicious activities and enforces security rules.
-*   **[kinnector-protect-community](https://github.com/kinnector/kinnector-protect-community)** – Core threat signatures, configurations, and security policies.
-*   **[kinnector-wordpress](https://github.com/kinnector/kinnector-wordpress)** – Integration plugin for protecting WordPress environments.
-*   **[kinnector-docker](https://github.com/kinnector/kinnector-docker)** – Docker integrations to run Warden inside base images or as a sidecar proxy.
-*   **[kinnector-installer](https://github.com/kinnector/kinnector-installer)** – Setup scripts and packages for Linux deployments.
+### Server & Container Workloads
+* **[kinnector-warden](https://github.com/kinnector/kinnector-warden)**: Server EDR aggregator and payload validation service.
+* **[kinnector-docker](https://github.com/kinnector/kinnector-docker)**: Dockerfiles and sidecar configurations for container environments.
+* **[kinnector-collect](https://github.com/kinnector/kinnector-collect)**: Audit-only deployment tools for baseline telemetry gathering.
 
-### Shared Resources & Assets
-*   **[kinnector-docs](https://github.com/kinnector/kinnector-docs)** – Developer and user documentation.
-*   **[kinnector-design](https://github.com/kinnector/kinnector-design)** – UI/UX resources, design assets, and architectural blueprints.
+### Rules & Integration
+* **[kinnector-config](https://github.com/kinnector/kinnector-config)**: Rule parsing and cryptographic validation library.
+* **[kinnector-protect-community](https://github.com/kinnector/kinnector-protect-community)**: Public repository of rules, exclusions, and allowlists.
+* **[kinnector-wordpress](https://github.com/kinnector/kinnector-wordpress)**: Custom query-vetting plugin for WordPress.
+* **[kinnector-wild-analysis](https://github.com/kinnector/kinnector-wild-analysis)**: Threat intelligence reports on active in-the-wild campaigns.
 
 ---
 
 ## Contributing
 
-We welcome contributions to any part of the project. Please read the [Documentation](https://github.com/kinnector/kinnector-docs) to learn more about our coding guidelines and development workflows.
+We welcome contributions to any part of the project. Please read the developer guidelines in [kinnector-docs](https://github.com/kinnector/kinnector-docs) to learn more about our coding standards, schema definitions, and pull request workflows.
